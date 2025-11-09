@@ -43,10 +43,13 @@ Virtual Meeting Integration — allow background invisibility or replacement dur
 
 Security & Surveillance — object disappearance/reconstruction in real-time monitoring.
 
-🧰 Dependencies
+ Tech Stack & Dependencies
+
 Python 3.8+
 
-OpenCV
+OpenCV (cv2)
 
 NumPy
+
+Flask (for backend streaming API)
 
