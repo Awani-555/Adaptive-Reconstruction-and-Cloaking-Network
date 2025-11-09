@@ -1,4 +1,4 @@
-# ARCNet – Adaptive Reconstruction and Cloaking Network 🧥✨
+# ARCNet – Adaptive Reconstruction and Cloaking Network 
 
 **ARCNet** is a computer vision-based system that uses background subtraction and color segmentation to create an *invisibility cloak effect* — inspired by advanced visual occlusion and object reconstruction techniques used in AR/VR and surveillance.
 
