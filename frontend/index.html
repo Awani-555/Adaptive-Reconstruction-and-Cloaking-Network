@@ -1,0 +1,44 @@
+<!--
+index.html
+Frontend interface for ARCNet – Adaptive Reconstruction and Cloaking Network
+
+Responsibilities:
+- Provide a simple UI to control the invisibility process.
+- Start/stop the backend via API calls.
+- Display the live video stream from the backend.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCNet | Adaptive Reconstruction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Main Title -->
+    <h1> ARCNet – Adaptive Reconstruction & Cloaking Network</h1>
+    <p class="tagline">Experience the Invisible Cloak Effect in Real-Time</p>
+
+    <!-- Video Feed Section -->
+    <div class="video-container">
+      <!-- The backend MJPEG stream is displayed directly as an image source -->
+      <img id="videoFeed" src="/video_feed" alt="Live ARCNet Feed" />
+    </div>
+
+    <!-- Control Buttons -->
+    <div class="controls">
+      <button id="startBtn">Start Cloaking</button>
+      <button id="stopBtn">Stop Cloaking</button>
+    </div>
+
+    <!-- Live Status Display -->
+    <p id="status">Status: Idle</p>
+  </div>
+
+  <!-- JavaScript logic for API calls -->
+  <script src="script.js"></script>
+</body>
+</html>

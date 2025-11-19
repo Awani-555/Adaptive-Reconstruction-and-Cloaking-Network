@@ -1,0 +1,93 @@
+/*
+style.css
+Defines the layout and styling for ARCNet’s frontend.
+Creates a clean, centered interface with modern look and responsive design.
+*/
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#videoFeed {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.controls {
+  margin-top: 15px;
+}
+
+button {
+  background: #00adb5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #007d82;
+  transform: scale(1.05);
+}
+
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-size: 0.9rem;
+  }
+}
